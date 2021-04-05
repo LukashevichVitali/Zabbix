@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DD_AGENT_MAJOR_VERSION=7 DD_API_KEY=0701c40915c531a3b229f0bf1b045d59 DD_SITE="datadoghq.eu" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script.sh)"
+DD_AGENT_MAJOR_VERSION=7 DD_API_KEY=key DD_SITE="datadoghq.eu" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script.sh)"
 
 sudo yum install -y httpd
 sudo cat >> /etc/httpd/conf/httpd.conf <<_EOF_
